@@ -72,7 +72,7 @@ To understand how to create, edit and build rooms, it is recommmended that you f
 
 To start we will create a simple world which contains walls and obstacts and also an Epuc robot.  To create this world, follow the tutorial here, or download the world from here.
 
-### Step 2: Create New Controller
+### Step 2: Create New Controller & move forwards
 
 Next, we will create a new 'controller' for the epuc robot.  This is going to be written in Python, and can be created using the controller wizard.  To create this controller start from the toolbar:
 
@@ -105,9 +105,11 @@ while robot.step(timestep) != -1:
 
 This program should now be saved after which it can be loaded onto the robot.  To do this on the left hand side of the webots interface, find the node that corresponds to the robot, this will be called something like 'Robot E-puck'.  Expand this node, and scroll down to the find the node 'controller', click on the select button below the tree, and from the pop-up choose the name of the controller you have developed.  
 
-### Step 3: Move the robot forwards
+You can then run this simulation - press the play button above the simulation.  The robot should now move forwards.
 
-### Step 4: Use the distance sensors
+### Step 3: Use the distance sensor & avoid obstacles
 
-### Step 5: View the camera stream
+## Using the camera and detecting balls
+
+
  
