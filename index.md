@@ -61,7 +61,7 @@ In this tutorial we will focus on developing the controllers for the robots, in 
 
 ### Introduction to Building Worlds 
 
-To understand how to create, edit and build rooms, it is recommmended that you follow the tutorial here.  This will provide basics in building worlds, however, the following activities focus on developing controllers for robots with practise worlds provided.    
+To understand how to create, edit and build rooms, it is recommmended that you follow the tutorial [here](https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots-20-minutes).  This will provide basics in building worlds, however, the following activities focus on developing controllers for robots with practise worlds provided.    
 
 
 ### Initial Activities
