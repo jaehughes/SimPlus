@@ -103,9 +103,7 @@ while robot.step(timestep) != -1:
     pass
 ```
 
-This program can now be loaded onto the robot
-
-
+This program should now be saved after which it can be loaded onto the robot.  To do this on the left hand side of the webots interface, find the node that corresponds to the robot, this will be called something like 'Robot E-puck'.  Expand this node, and scroll down to the find the node 'controller', click on the select button below the tree, and from the pop-up choose the name of the controller you have developed.  
 
 ### Step 3: Move the robot forwards
 
