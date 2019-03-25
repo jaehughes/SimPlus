@@ -80,7 +80,7 @@ Next, we will create a new 'controller' for the epuc robot.  This is going to be
 
 A new textfile 'avoidObstacles.py should now open in the text editor component on the Webots Software interface.  We are going to start with a basic program to make the robot go forwards.
 
-```markdown
+```python
 from controller import Robot
 
 # create the Robot instance.
