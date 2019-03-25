@@ -40,16 +40,28 @@ There are a number of online resources online, including many activities.  The m
 * [Webots Getting Started](https://cyberbotics.com/#support)
 * [Webots E-Book](https://en.wikibooks.org/wiki/Cyberbotics%27_Robot_Curriculum) - provides an curriculum for Webots using the Epuc robot.  Starts quite simply, but gets rapidly more challenging!
 
-
-
-### Getting Started
-
 ## The Robot
 The robot used in this simulation is based on a real-world robot which has been created for education and research, the Epuc.  Specific details about the robot can be found [here](https://cyberbotics.com/doc/guide/epuck).    
 
 The robot is equipped with a differential drive wheel system actuated by two stepper motors, a number of distance sensors, light sensors and a camera.  This is summarised in the Figure below.  
 
 ![alt text](epuc.jpg "The Epuc Robot: sensors and actuators")
+
+
+### Getting Started
+
+The Webots simulator allows worlds and robots to be created using Proto scripting, and also allows controllers for robots and other objects to be developed.  
+
+Webots simulations comprise of three key parts:
+1. A Webots world file (.wbt) that defines one or several robots and their environment. The .wbt file does sometimes depend on external PROTO files (.proto) and textures.
+2. One or several controller programs for the above robots (in C/C++/Java/Python/MATLAB).
+3. An optional physics plugin that can be used to modify Webots regular physics behavior (in C/C++).
+
+In this tutorial we will focus on developing the controllers for the robots, in particular focusing on developing in Python.
+
+### Introduction to Building Worlds 
+
+To understand how to create, edit and build rooms, it is recommmended that you follow the tutorial here.  This will provide basics in building worlds, however, the following activities focus on developing controllers for robots with practise worlds provided.    
 
 
 ### Initial Activities
