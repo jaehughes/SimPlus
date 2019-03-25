@@ -83,13 +83,13 @@ A new textfile 'avoidObstacles.py should now open in the text editor component o
 ```python
 from controller import Robot
 
-# create the Robot instance.
-robot = Robot()
+robot = Robot()  # create the Robot instance.  
+maxSpeed = 6.2   # rated maximum speed of Epuc motors
 
 # get the time step of the current world.
 timestep = int(robot.getBasicTimeStep())
 
-# create objects for the wheels
+# get the motor devices for the differential drive of the Epuc
 motorl = robot.getMotor("left wheel motor")
 motorr = robot.getMotor("right wheel motor")
 
@@ -98,10 +98,12 @@ motorl.setPosition(float("inf"))
 motorr.setPosition(float("inf"))
 
 while robot.step(timestep) != -1:
-    motorl.setVelocity(6.2)
-    motorr.setVelocity(6.2)
+    motorl.setVelocity(maxSpeed)
+    motorr.setVelocity(maxSpeed)
     pass
 ```
+
+This program can now be loaded onto the robot
 
 
 
