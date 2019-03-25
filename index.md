@@ -68,11 +68,41 @@ To understand how to create, edit and build rooms, it is recommmended that you f
 
 ## Basic Navigation (Avoid obstacles)
 
-### Step 1: Open Sample World
+### Step 1: Open/create a sample world
 
 To start we will create a simple world which contains walls and obstacts and also an Epuc robot.  To create this world, follow the tutorial here, or download the world from here.
 
 ### Step 2: Create New Controller
+
+Next, we will create a new 'controller' for the epuc robot.  This is going to be written in Python, and can be created using the controller wizard.  To create this controller start from the toolbar:
+
+> Wizards > New Robot Controller > Next > Pyton >> 'provide name, e.g.:avoidObstactles > Finish
+
+A new textfile 'avoidObstacles.py should now open in the text editor component on the Webots Software interface.  We are going to start with a basic program to make the robot go forwards.
+
+```markdown
+from controller import Robot
+
+# create the Robot instance.
+robot = Robot()
+
+# get the time step of the current world.
+timestep = int(robot.getBasicTimeStep())
+
+# create objects for the wheels
+motorl = robot.getMotor("left wheel motor")
+motorr = robot.getMotor("right wheel motor")
+
+# Configure the movement limits of the stepper motors in the wheels
+motorl.setPosition(float("inf"))
+motorr.setPosition(float("inf"))
+
+while robot.step(timestep) != -1:
+    motorl.setVelocity(6.2)
+    motorr.setVelocity(6.2)
+    pass
+```
+
 
 
 ### Step 3: Move the robot forwards
@@ -81,25 +111,3 @@ To start we will create a simple world which contains walls and obstacts and als
 
 ### Step 5: View the camera stream
  
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
